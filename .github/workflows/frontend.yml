@@ -1,5 +1,8 @@
 name: Build and push frontend image to dockerhub
 on:
+  push:
+    paths:
+      - 'frontend/**'
   workflow_dispatch: 
 jobs:
   build:
