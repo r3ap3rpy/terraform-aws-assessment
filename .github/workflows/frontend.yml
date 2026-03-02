@@ -20,6 +20,7 @@ jobs:
     - name: Build and push to dockerhub
       uses: docker/build-push-action@v5
       with:
-       context: ./frontend
+       context: .
+       file: ./frontend/Dockerfile
        push: true
        tags: r3ap3rpy/tf-aws-frontend:latest
